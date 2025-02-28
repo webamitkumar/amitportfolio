@@ -423,3 +423,178 @@ nav ul li{
     border-radius: 0.5rem;
     
 }
+
+/*  Responsive design*/
+/* --------------------------------- */
+/* Responsive Design for Different Screens */
+/* --------------------------------- */
+
+/* Medium Screens - Tablets and Small Laptops (768px - 1024px) */
+@media (max-width: 1024px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 22px;
+        margin-left: 25px;
+    }
+
+    .Home {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .Home-content h3 {
+        font-size: 28px;
+    }
+
+    .Home-content h1 span {
+        font-size: 48px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .serviceses-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Screens - Mobile Phones (0px - 767px) */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 5%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: rgb(130, 37, 37);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 100;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .Home {
+        padding: 50px 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Home-content h3 {
+        font-size: 24px;
+    }
+
+    .Home-content h1 span {
+        font-size: 40px;
+    }
+
+    .Home-sci a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .btn-box {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 90%;
+    }
+
+    .serviceses-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-text h2 {
+        font-size: 40px;
+    }
+
+    .contact-text h4,
+    .contact-text p {
+        font-size: 16px;
+    }
+
+    .contact-list {
+        text-align: center;
+    }
+
+    .contact-icon i {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .contact-form form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-form .send {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+
+    .last-text {
+        font-size: 14px;
+    }
+
+    .top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .top i {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
